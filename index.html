@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Tecnología Castro</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+        header {
+            padding: 20px;
+            background-color: beige;
+        }
+        h1 {
+            color: white;
+            text-shadow: 0 0 5px #bc13fe, 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .semana {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #bc13fe;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(188, 19, 254, 0.2);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .boton-pdf {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #bc13fe;
+            font-weight: bold;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: aquamarine;
+        }
+
+        footer img {
+            height: 40px;
+        }
+
+        @media(max-width:600px) {
+            footer {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Bitácora de Tecnología</h1>
+    </header>
+
+    <main>
+        <div class="semana">
+            <h3>Semana 1: Introducción Arduino</h3>
+            <p>Aprendí sobre CSS y cómo usar la IA para mejorar mis diseños, cambiando colores y creando interacciones con mi página.</p>
+            <a href="recursos/Introducción Arduino jimena.pdf" class="boton-pdf" target="_blank">
+                <span style="margin-right: 8px;">📄</span> Ver Documento PDF
+            </a>
+        </div>
+
+        <div class="semana">
+            <h3>Semana 2: Simulación de Arduino en Tinkercad</h3>
+            <p>En esta sesión utilizamos Tinkercad para programar un circuito con Arduino. En el video se puede observar cómo el código controla el encendido secuencial de los colores del LED, probando la lógica de programación y las conexiones virtuales.</p>
+            
+            <video controls>
+                <source src="Grabación 2026-05-12 123020.mp4 mjco.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <span>2026 @jimenaS</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio">
+    </footer>
+
+</body>
+</html>
